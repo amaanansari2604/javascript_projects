@@ -4,14 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Clone</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li class="brand"><img src="logo.png" alt="spotify"></li>
+            <li class="brand"><img src="logo.png" alt="spotify">Spotify</li>
             <li>Home</li>
             <li>About</li>
         </ul>
     </nav>
+
+    <div class="container">
+       
+        <div class="songList">
+             <h1>Best of Jolly - No Copyright Sounds</h1>
+             <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="">
+                    <span>Let me Love you</span>
+                    <span class="songListplay"><span class="timeStamp">05:34 <i class="fa-regular fa-circle-play fa-3x"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/2.jpg" alt="">
+                    <span>soon i'll be 60 years older</span>
+                    <span class="songListplay"><span class="timeStamp">05:34 <i class="fa-regular fa-circle-play fa-3x"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/3.jpg" alt="">
+                    <span>billionnare</span>
+                    <span class="songListplay"><span class="timeStamp">05:34 <i class="fa-regular fa-circle-play fa-3x"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/4.jpg" alt="">
+                    <span>fire flies</span>
+                    <span class="songListplay"><span class="timeStamp">05:34 <i class="fa-regular fa-circle-play fa-3x"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/5.jpg" alt="">
+                    <span>levitating</span>
+                    <span class="songListplay"><span class="timeStamp">05:34 <i class="fa-regular fa-circle-play fa-3x"></i></span></span>
+                </div>
+             </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons  -->
+             <i class="fa-solid fa-backward fa-3x"></i>
+             <i class="fa-regular fa-circle-play fa-3x"></i>
+             <i class="fa-solid fa-forward fa-3x"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" srcset=""> let me love you 
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d52aebccfb.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
