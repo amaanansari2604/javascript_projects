@@ -12,7 +12,11 @@ const TodoSchema = new mongoose.Schema({
     createdBy: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
-    }
+    },
+    subTodos: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "SubTodo"
+    }]
 }, { timestamps: true })
 
 export const Todo = mongoose.model("Todo", TodoSchema);
