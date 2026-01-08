@@ -22,15 +22,14 @@ function App() {
       <p>Jokes : {jokes.length}</p>
      
      {
-      jokes.map((joke) => {
-        return (
+      jokes.map((joke) => (
           <div key={joke.id}>
             <h3>{joke.title}</h3>
             <p>{joke.content}</p>
           </div>
           
         )
-      })
+      )
      }
     </>
   )
